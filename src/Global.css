@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+:root {
+  /* Cores principais */
+  --color-primary: rgba(111, 26, 182, 1);        /* Roxo principal */
+  --color-secondary: rgba(155, 99, 246, 1);      /* Lilás secundário */
+
+  /* Backgrounds */
+  --color-background: rgba(247, 242, 255, 1);    /* Fundo geral claro */
+
+  /* Surface / Cards */
+  --color-surface: rgba(90, 22, 140, 0.85);      /* Cards escuros com transparência */
+  --color-surface-solid: rgba(90, 22, 140, 1);   /* Versão sólida do surface */
+  --color-surface-light: rgba(160, 106, 245, 1); /* Fundo lilás claro */
+
+  /* Textos */
+  --color-text-primary: rgba(255, 255, 255, 1);  /* Texto branco */
+  --color-text-dark: rgba(43, 18, 63, 1);        /* Texto escuro */
+  --color-text-muted: rgba(220, 200, 255, 1);    /* Texto secundário */
+
+  /* Botões */
+  --color-button: rgba(111, 26, 182, 1);         /* Botão principal */
+  --color-button-hover: rgba(88, 20, 143, 1);    /* Hover do botão principal */
+  --color-button-text: rgba(255, 255, 255, 1);   /* Texto do botão */
+
+  /* Botões negativos */
+  --color-danger: rgba(229, 57, 53, 1);          /* Cancelar / excluir */
+  --color-danger-hover: rgba(183, 28, 28, 1);    /* Hover botão negativo */
+  --color-danger-text: rgba(255, 255, 255, 1);   /* Texto do botão negativo */
+
+  /* Bordas e detalhes */
+  --color-border: rgba(199, 166, 255, 1);
+  --color-accent: rgba(255, 79, 216, 1);
+}
