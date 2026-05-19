@@ -249,7 +249,7 @@ function AboutUs() {
           <motion.h2 variants={textItemVariants}>Nossa equipe</motion.h2>
 
           <motion.p variants={textItemVariants}>
-            Conheça as pessoas responsáveis pelo desenvolvimento do Rotadelas.
+            Conheça as pessoas responsáveis pelo desenvolvimento do RotaDelas.
           </motion.p>
         </motion.div>
 
