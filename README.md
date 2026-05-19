@@ -1,73 +1,248 @@
-# React + TypeScript + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🚺 Rota Delas - Front-end
 
-Currently, two official plugins are available:
+<img src="./public/banner.png" alt="Banner Rota Delas" width="100%"/>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Plataforma desenvolvida para promover mais segurança, autonomia e acolhimento para mulheres durante seus trajetos urbanos.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=fff)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=fff)
 
-## Expanding the ESLint configuration
+</div>
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+# 💜 Sobre o Projeto
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+O **Rota Delas** é uma plataforma desenvolvida para promover segurança, autonomia e acolhimento para mulheres durante seus trajetos urbanos, utilizando tecnologia como ferramenta de impacto social.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Este repositório contém todo o desenvolvimento do **Front-end** da aplicação, construído com foco em:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- 🎨 Interface moderna e acessível
+- 📱 Responsividade
+- ♻️ Componentização reutilizável
+- 🚀 Performance e escalabilidade
+- 🧠 Navegação intuitiva
+- ✨ Experiência visual elegante
+
+A aplicação apresenta informações sobre o projeto, funcionalidades da plataforma e identidade visual da solução.
+
+---
+
+# 📸 Prévia da Aplicação
+
+## 🏠 Home
+
+<p align="center">
+  <img src="./public/home.png" width="100%" alt="Home Rota Delas"/>
+</p>
+
+---
+
+## 🚀 Funcionalidades da Plataforma
+
+<p align="center">
+  <img src="./public/produto-1.png" width="49%" alt="Produto Rota Delas"/>
+  <img src="./public/produto-2.png" width="49%" alt="Produto Rota Delas"/>
+</p>
+
+---
+
+## 👩‍💻 Sobre Nós
+
+<p align="center">
+  <img src="./public/sobre.png" width="100%" alt="Sobre Nós"/>
+</p>
+
+---
+
+# 🧠 Tecnologias Utilizadas
+
+- React
+- TypeScript
+- Vite
+- CSS3
+- React Router DOM
+- ESLint
+
+---
+
+# 📁 Estrutura do Projeto
+
+```bash
+src
+ ┣ 📂 components
+ ┃ ┣ 📂 footer
+ ┃ ┃ ┗ 📜 Footer.tsx
+ ┃ ┗ 📂 navbar
+ ┃ ┃ ┗ 📜 Navbar.tsx
+ ┣ 📂 pages
+ ┃ ┣ 📂 css
+ ┃ ┗ 📂 tsx
+ ┃ ┃ ┣ 📜 Aboutus.tsx
+ ┃ ┃ ┣ 📜 Home.tsx
+ ┃ ┃ ┗ 📜 Product.tsx
+ ┣ 📜 App.tsx
+ ┣ 📜 Global.css
+ ┗ 📜 main.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+# 🎨 Identidade Visual
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+A interface foi construída utilizando uma identidade visual moderna baseada em:
+
+- Tons de roxo
+- Branco suave
+- Contrastes acessíveis
+- Elementos minimalistas
+- Cards com sombras suaves
+- Layout limpo e organizado
+
+---
+
+# ✨ Funcionalidades da Interface
+
+✅ Navegação entre páginas  
+✅ Layout responsivo  
+✅ Componentização reutilizável  
+✅ Estrutura escalável  
+✅ Interface moderna  
+✅ Separação organizada de páginas e componentes  
+
+---
+
+# 🚀 Como Executar o Projeto
+
+## 📥 Clone o repositório
+
+```bash
+git clone https://github.com/Grupo-03-Turma-JavaScript-14/rotadelas-front.git
 ```
+
+---
+
+## 📂 Acesse a pasta do projeto
+
+```bash
+cd rotadelas-front
+```
+
+---
+
+## 📦 Instale as dependências
+
+```bash
+npm install
+```
+
+---
+
+## ▶️ Execute o projeto
+
+```bash
+npm run dev
+```
+
+---
+
+# 🌐 Integração com o Back-end
+
+O Front-end foi desenvolvido para consumir os serviços da API do projeto **Rota Delas Back-end**.
+
+🔗 Repositório do Back-end:
+
+https://github.com/Grupo-03-Turma-JavaScript-14/rotadelas
+
+---
+
+# 🔮 Futuras Implementações
+
+- 🔐 Autenticação de usuários
+- 📍 Integração com geolocalização
+- 🛡️ Rotas seguras em tempo real
+- 🚨 Botão de emergência
+- 👥 Compartilhamento de trajeto
+- 📲 Integração mobile
+
+---
+
+# 👩‍💻 Equipe
+
+<table>
+  <tr>
+
+<td align="center">
+  <a href="https://github.com/Duartetais">
+    <img src="https://github.com/Duartetais.png" width="100px;" alt="Taís Duarte"/><br/>
+    <sub><b>Taís Duarte</b></sub>
+  </a><br/>
+ 
+</td>
+
+<td align="center">
+  <a href="https://github.com/darkblacks">
+    <img src="https://github.com/darkblacks.png" width="100px;" alt="darkblacks"/><br/>
+    <sub><b>darkblacks</b></sub>
+  </a><br/>
+
+</td>
+
+<td align="center">
+  <a href="https://github.com/BiaNascimento">
+    <img src="https://github.com/BiaNascimento.png" width="100px;" alt="BiaNascimento"/><br/>
+    <sub><b>BiaNascimento</b></sub>
+  </a><br/>
+
+</td>
+
+<td align="center">
+  <a href="https://github.com/KefilweLourenco">
+    <img src="https://github.com/KefilweLourenco.png" width="100px;" alt="KefilweLourenco"/><br/>
+    <sub><b>KefilweLourenco</b></sub>
+  </a><br/>
+ 
+</td>
+
+<td align="center">
+  <a href="https://github.com/Kauvinzera">
+    <img src="https://github.com/Kauvinzera.png" width="100px;" alt="Kauvinzera"/><br/>
+    <sub><b>Kauvinzera</b></sub>
+  </a><br/>
+
+</td>
+
+<td align="center">
+  <a href="https://github.com/leticiafnss">
+    <img src="https://github.com/leticiafnss.png" width="100px;" alt="leticiafnss"/><br/>
+    <sub><b>leticiafnss</b></sub>
+  </a><br/>
+
+</td>
+
+<td align="center">
+  <a href="https://github.com/JhonatanMiranda221">
+    <img src="https://github.com/JhonatanMiranda221.png" width="100px;" alt="JhonatanMiranda221"/><br/>
+    <sub><b>JhonatanMiranda221</b></sub>
+  </a><br/>
+
+</td>
+
+  </tr>
+</table>
+
+---
+
+# 📄 Licença
+
+Este projeto foi desenvolvido para fins acadêmicos e educacionais.
+
+---
+
+# 💜 Rota Delas
+
+Tecnologia e inovação promovendo mais segurança e autonomia para mulheres.
