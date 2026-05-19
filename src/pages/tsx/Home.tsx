@@ -12,22 +12,9 @@ const cardRise = {
 function Home() {
   return (
     <main className="home-page">
-      <header className="home-navbar">
-        <a href="#inicio" className="home-logo">
-          <img src="/logo_rota_delas.jpg" alt="Logo Rota Delas" />
-        </a>
-
-        <nav className="home-menu">
-          <a href="#inicio">Início</a>
-          <a href="#seguranca">Segurança</a>
-          <a href="#como-funciona">Como funciona</a>
-          <a href="#comunidade">Comunidade</a>
-        </nav>
-
-        <button className="button-primary">Entrar</button>
-      </header>
-
       <section className="home-hero" id="inicio">
+        <div className="hero-backdrop" />
+
         <div className="hero-content">
           <span className="hero-tag">Transporte seguro para mulheres</span>
 
@@ -135,8 +122,7 @@ function Home() {
 
       <section className="benefits-section" id="seguranca">
         <div className="section-title">
-          <span>Segurança em foco</span>
-          <h2>Por que escolher a Rota Delas?</h2>
+          <h2>Por que escolher Rota Delas?</h2>
         </div>
 
         <div className="benefits-grid">
@@ -185,7 +171,6 @@ function Home() {
 
       <section className="steps-section" id="como-funciona">
         <div className="section-title">
-          <span>Simples e direto</span>
           <h2>Como funciona</h2>
         </div>
 

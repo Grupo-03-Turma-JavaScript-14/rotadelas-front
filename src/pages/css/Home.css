@@ -171,42 +171,6 @@ a {
   background: var(--gradient-page-background);
 }
 
-.home-navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 32px;
-  min-height: var(--navbar-height);
-  padding: 18px 24px;
-  margin-bottom: 56px;
-  border: var(--border-glass);
-  border-radius: 28px;
-  background: rgba(255, 255, 255, 0.52);
-  box-shadow: var(--shadow-soft);
-  backdrop-filter: var(--blur-glass);
-}
-
-.home-logo img {
-  width: 150px;
-  display: block;
-}
-
-.home-menu {
-  display: flex;
-  gap: 28px;
-}
-
-.home-menu a {
-  color: var(--color-text-dark);
-  text-decoration: none;
-  font-weight: 700;
-  transition: 0.2s;
-}
-
-.home-menu a:hover {
-  color: var(--color-primary);
-}
-
 button {
   border: none;
   cursor: pointer;
@@ -241,11 +205,37 @@ button {
 }
 
 .home-hero {
+  position: relative;
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(540px, 0.96fr);
   align-items: center;
   gap: 56px;
   min-height: 620px;
+  padding: 42px;
+  border: var(--border-glass);
+  border-radius: 38px;
+  background:
+    linear-gradient(135deg, rgba(247, 242, 255, 0.86), rgba(247, 242, 255, 0.72)),
+    url('/carro_rota_delas.png');
+  background-position: center;
+  background-size: cover;
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+}
+
+.hero-backdrop {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 14% 22%, rgba(255, 255, 255, 0.52), transparent 24%),
+    linear-gradient(90deg, rgba(247, 242, 255, 0.92) 0%, rgba(247, 242, 255, 0.56) 52%, rgba(247, 242, 255, 0.18) 100%);
+  pointer-events: none;
+}
+
+.hero-content,
+.hero-visual {
+  position: relative;
+  z-index: 1;
 }
 
 .hero-content {
@@ -567,6 +557,10 @@ button {
   font-size: clamp(32px, 4vw, 48px);
 }
 
+.section-title h2 {
+  margin: 0;
+}
+
 .benefits-grid,
 .steps-grid {
   display: grid;
@@ -688,17 +682,13 @@ button {
     padding: 24px;
   }
 
-  .home-navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .home-menu {
-    flex-wrap: wrap;
-  }
-
   .hero-visual-layout {
     grid-template-columns: 1fr;
+  }
+
+  .home-hero {
+    padding: 28px;
+    background-position: 62% center;
   }
 
   .hero-banner-panel,
@@ -718,10 +708,6 @@ button {
 }
 
 @media (max-width: 560px) {
-  .home-menu {
-    gap: 16px;
-  }
-
   .hero-actions {
     flex-direction: column;
   }
@@ -735,6 +721,17 @@ button {
   .hero-banner-panel,
   .hero-card {
     padding: 22px;
+  }
+
+  .home-hero {
+    padding: 22px;
+    border-radius: 30px;
+    background-position: 68% center;
+  }
+
+  .hero-backdrop {
+    background:
+      linear-gradient(180deg, rgba(247, 242, 255, 0.88) 0%, rgba(247, 242, 255, 0.74) 44%, rgba(247, 242, 255, 0.42) 100%);
   }
 
   .banner-pill {
@@ -762,4 +759,5 @@ button {
   .route-stop-content strong {
     font-size: 16px;
   }
+
 }
