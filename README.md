@@ -1,24 +1,18 @@
+<div align="center">
+
 # 🚺 Rota Delas - Front-end
 
-<p align="center">
-  <img src="./public/banner.png" alt="Banner Rota Delas"/>
-</p>
+<img src="./public/banner.png" alt="Banner Rota Delas" width="100%"/>
 
-<p align="center">
-  Plataforma desenvolvida para promover mais segurança, autonomia e acolhimento para mulheres durante seus trajetos urbanos.
-</p>
+Plataforma desenvolvida para promover mais segurança, autonomia e acolhimento para mulheres durante seus trajetos urbanos.
 
 ---
-
-<p align="center">
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=fff)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=fff)
 
-
-</p>
-
+</div>
 ---
 
 # 💜 Sobre o Projeto
