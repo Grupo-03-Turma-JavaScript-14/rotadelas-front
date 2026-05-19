@@ -23,12 +23,12 @@ export default function Footer() {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/sobre" className="text-white/85 hover:text-[#FF4FD8] transition duration-200">
+              <NavLink to="/aboutus" className="text-white/85 hover:text-[#FF4FD8] transition duration-200">
                 Sobre Nós
               </NavLink>
             </li>
             <li>
-              <NavLink to="/contato" className="text-white/85 hover:text-[#FF4FD8] transition duration-200">
+              <NavLink to="/product" className="text-white/85 hover:text-[#FF4FD8] transition duration-200">
                 Produto
               </NavLink>
             </li>
