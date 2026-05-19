@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="bg-gradient-to-b from-[#6F1AB6]/95 via-[#4D1E8F] to-[#330A4D] text-white">
       <div className="max-w-7xl mx-auto px-6 py-12 grid gap-10 md:grid-cols-[minmax(220px,1fr)_repeat(2,minmax(180px,1fr))]">
         <div className="space-y-4">
-          <img src="/logo.png" alt="Logo Rota Delas" className="h-12 w-auto object-contain" />
+          <img src="/navbar_footer/logo.png" alt="Logo Rota Delas" className="h-12 w-auto object-contain" />
           <p className="text-sm leading-7 text-white/85 max-w-md">
             Rota Delas conecta seu caminho com confiança, estilo e comunidades inspiradoras.
           </p>
