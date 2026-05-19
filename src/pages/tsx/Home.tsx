@@ -5,7 +5,7 @@ import '../css/Home.css'
 const cardRise = {
   initial: { opacity: 0, y: 28 },
   whileInView: { opacity: 1, y: 0 },
-  viewport: { once: true, amount: 0.3 },
+  viewport: { once: true, amount: 0.25 },
   transition: { duration: 0.65, ease: 'easeOut' as const },
 }
 
@@ -21,13 +21,17 @@ function Home() {
           <h1>Segurança em cada trajeto</h1>
 
           <p>
-            A Rota Delas conecta passageiras e motoristas mulheres em uma
+            A RotaDelas conecta passageiras e motoristas mulheres em uma
             experiência de transporte mais segura, acolhedora e confiável.
           </p>
 
           <div className="hero-actions">
-            <button className="button-primary">Pedir uma corrida</button>
-            <button className="button-secondary">Quero ser motorista</button>
+            <a href="/product" className="button-primary">
+              Pedir uma corrida
+            </a>
+            <a href="/product" className="button-secondary">
+              Quero ser motorista
+            </a>
           </div>
         </div>
 
@@ -43,17 +47,17 @@ function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.12, ease: 'easeOut' }}
-              whileHover={{ y: -10, rotate: -1.4 }}
+              whileHover={{ y: -10, rotate: -1.2 }}
             >
-              <span className="banner-pill">Rota Delas em movimento</span>
+              <span className="banner-pill">RotaDelas em movimento</span>
 
               <div className="hero-banner-viewport">
                 <motion.img
                   src="/clientes_rota_delas.png"
-                  alt="Clientes felizes utilizando a Rota Delas"
+                  alt="Clientes felizes utilizando a RotaDelas"
                   className="hero-banner"
                   initial={{ scale: 1.04, x: -10 }}
-                  animate={{ x: [-10, 10, -10], y: [0, -5, 0] }}
+                  animate={{ x: [-10, 8, -10], y: [0, -5, 0] }}
                   transition={{
                     duration: 10,
                     repeat: Number.POSITIVE_INFINITY,
@@ -122,7 +126,7 @@ function Home() {
 
       <section className="benefits-section" id="seguranca">
         <div className="section-title">
-          <h2>Por que escolher Rota Delas?</h2>
+          <h2>Por que escolher RotaDelas?</h2>
         </div>
 
         <div className="benefits-grid">
@@ -216,7 +220,7 @@ function Home() {
         whileHover={{ y: -8 }}
       >
         <div>
-          <span>Comunidade Rota Delas</span>
+          <span>Comunidade RotaDelas</span>
           <h2>Mobilidade com cuidado não é luxo. É direito.</h2>
           <p>
             Uma plataforma pensada para fortalecer autonomia, segurança e
@@ -224,7 +228,12 @@ function Home() {
           </p>
         </div>
 
-        <button className="button-light">Começar agora</button>
+        <div className="coming-soon-wrap">
+          <button className="button-light button-disabled" type="button">
+            Começar agora
+          </button>
+          <span className="coming-soon-tip">Em breve</span>
+        </div>
       </motion.section>
     </main>
   )
