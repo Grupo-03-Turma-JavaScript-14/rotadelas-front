@@ -159,10 +159,10 @@ function AboutUs() {
             Sobre o projeto
           </motion.span>
 
-          <motion.h1 variants={textItemVariants}>Rotadelas</motion.h1>
+          <motion.h1 variants={textItemVariants}>RotaDelas</motion.h1>
 
           <motion.p variants={textItemVariants}>
-            O Rotadelas é um aplicativo desenvolvido para apoiar mulheres em seus
+            O RotaDelas é um aplicativo desenvolvido para apoiar mulheres em seus
             deslocamentos diários, oferecendo mais segurança, confiança e
             praticidade durante cada trajeto.
           </motion.p>
