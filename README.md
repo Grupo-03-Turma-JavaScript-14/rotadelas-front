@@ -6,14 +6,13 @@
 
 Plataforma desenvolvida para promover mais segurança, autonomia e acolhimento para mulheres durante seus trajetos urbanos.
 
----
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=fff)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=fff)
 
 </div>
----
+
 
 # 💜 Sobre o Projeto
 
@@ -30,7 +29,6 @@ Este repositório contém todo o desenvolvimento do **Front-end** da aplicação
 
 A aplicação apresenta informações sobre o projeto, funcionalidades da plataforma e identidade visual da solução.
 
----
 
 # 📸 Prévia da Aplicação
 
