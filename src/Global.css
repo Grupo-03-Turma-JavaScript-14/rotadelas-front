@@ -1,34 +1,161 @@
 @import "tailwindcss";
 
 :root {
-  /* Cores principais */
-  --color-primary: rgba(111, 26, 182, 1);        /* Roxo principal */
-  --color-secondary: rgba(155, 99, 246, 1);      /* Lilás secundário */
+  /* =========================
+     LAYOUT
+  ========================= */
 
-  /* Backgrounds */
-  --color-background: rgba(247, 242, 255, 1);    /* Fundo geral claro */
+  --navbar-height: 80px;
+  --footer-height: 80px;
 
-  /* Surface / Cards */
-  --color-surface: rgba(90, 22, 140, 0.85);      /* Cards escuros com transparência */
-  --color-surface-solid: rgba(90, 22, 140, 1);   /* Versão sólida do surface */
-  --color-surface-light: rgba(160, 106, 245, 1); /* Fundo lilás claro */
+  /* =========================
+     CORES PRINCIPAIS
+  ========================= */
 
-  /* Textos */
-  --color-text-primary: rgba(255, 255, 255, 1);  /* Texto branco */
-  --color-text-dark: rgba(43, 18, 63, 1);        /* Texto escuro */
-  --color-text-muted: rgba(220, 200, 255, 1);    /* Texto secundário */
+  --color-primary: rgba(111, 26, 182, 1);
+  --color-secondary: rgba(155, 99, 246, 1);
 
-  /* Botões */
-  --color-button: rgba(111, 26, 182, 1);         /* Botão principal */
-  --color-button-hover: rgba(88, 20, 143, 1);    /* Hover do botão principal */
-  --color-button-text: rgba(255, 255, 255, 1);   /* Texto do botão */
+  /* =========================
+     BACKGROUNDS
+  ========================= */
 
-  /* Botões negativos */
-  --color-danger: rgba(229, 57, 53, 1);          /* Cancelar / excluir */
-  --color-danger-hover: rgba(183, 28, 28, 1);    /* Hover botão negativo */
-  --color-danger-text: rgba(255, 255, 255, 1);   /* Texto do botão negativo */
+  --color-background: rgba(247, 242, 255, 1);
 
-  /* Bordas e detalhes */
+  /* =========================
+     SURFACE / CARDS
+  ========================= */
+
+  --color-surface: rgba(90, 22, 140, 0.85);
+  --color-surface-solid: rgba(90, 22, 140, 1);
+  --color-surface-light: rgba(160, 106, 245, 1);
+
+  /* =========================
+     TEXTOS
+  ========================= */
+
+  --color-text-primary: rgba(255, 255, 255, 1);
+  --color-text-dark: rgba(43, 18, 63, 1);
+  --color-text-muted: rgba(220, 200, 255, 1);
+
+  /* =========================
+     BOTÕES
+  ========================= */
+
+  --color-button: rgba(111, 26, 182, 1);
+  --color-button-hover: rgba(88, 20, 143, 1);
+  --color-button-text: rgba(255, 255, 255, 1);
+
+  /* =========================
+     BOTÕES NEGATIVOS
+  ========================= */
+
+  --color-danger: rgba(229, 57, 53, 1);
+  --color-danger-hover: rgba(183, 28, 28, 1);
+  --color-danger-text: rgba(255, 255, 255, 1);
+
+  /* =========================
+     BORDAS E DETALHES
+  ========================= */
+
   --color-border: rgba(199, 166, 255, 1);
   --color-accent: rgba(255, 79, 216, 1);
+
+  /* =========================
+     BACKGROUNDS AUXILIARES
+  ========================= */
+
+  --background-glass-light: rgba(255, 255, 255, 0.16);
+  --background-badge-soft: rgba(160, 106, 245, 0.18);
+
+  /* =========================
+     GRADIENTES
+  ========================= */
+
+  --gradient-page-background:
+    radial-gradient(circle at 10% 20%, rgba(255, 79, 216, 0.18), transparent 28%),
+    radial-gradient(circle at 90% 10%, rgba(155, 99, 246, 0.26), transparent 30%),
+    radial-gradient(circle at 50% 90%, rgba(160, 106, 245, 0.28), transparent 35%),
+    var(--color-background);
+
+  --gradient-card-dark:
+    linear-gradient(135deg, rgba(90, 22, 140, 0.94), rgba(155, 99, 246, 0.82));
+
+  --gradient-card-soft:
+    linear-gradient(135deg, rgba(90, 22, 140, 0.9), rgba(155, 99, 246, 0.78));
+
+  --gradient-card-light:
+    linear-gradient(135deg, var(--color-surface-light), var(--color-secondary));
+
+  --gradient-button:
+    linear-gradient(135deg, var(--color-button), var(--color-secondary));
+
+  --gradient-glass:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.06));
+
+  --gradient-image-background:
+    radial-gradient(circle at 30% 20%, rgba(255, 79, 216, 0.22), transparent 32%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.06));
+
+  --gradient-card-glow:
+    radial-gradient(circle at 20% 15%, rgba(255, 79, 216, 0.22), transparent 32%),
+    radial-gradient(circle at 85% 85%, rgba(255, 255, 255, 0.16), transparent 30%);
+
+  --gradient-avatar-background:
+    linear-gradient(135deg, rgba(160, 106, 245, 0.85), rgba(155, 99, 246, 0.55));
+
+  /* =========================
+     BORDAS
+  ========================= */
+
+  --border-soft: 1px solid rgba(199, 166, 255, 0.6);
+  --border-glass: 1px solid rgba(199, 166, 255, 0.55);
+  --border-card-inner: 1px solid rgba(199, 166, 255, 0.45);
+
+  /* =========================
+     SOMBRAS
+  ========================= */
+
+  --shadow-soft: 0 18px 45px rgba(43, 18, 63, 0.1);
+  --shadow-card: 0 24px 60px rgba(43, 18, 63, 0.18);
+  --shadow-card-strong: 0 24px 60px rgba(43, 18, 63, 0.22);
+  --shadow-image: 0 24px 60px rgba(43, 18, 63, 0.28);
+  --shadow-popup: 0 14px 34px rgba(43, 18, 63, 0.28);
+  --shadow-inner: inset 0 0 35px rgba(43, 18, 63, 0.18);
+
+  /* =========================
+     EFEITOS
+  ========================= */
+
+  --blur-glass: blur(18px);
+
+  /* =========================
+     RADIUS
+  ========================= */
+
+  --radius-sm: 18px;
+  --radius-md: 24px;
+  --radius-lg: 30px;
+  --radius-xl: 32px;
+  --radius-2xl: 34px;
+  --radius-pill: 999px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--color-background);
+  color: var(--color-text-dark);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: inherit;
 }
