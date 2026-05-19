@@ -1,0 +1,417 @@
+.about-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 32px 56px 56px;
+  overflow-x: hidden;
+  color: var(--color-text-dark);
+  background: var(--gradient-page-background);
+}
+
+/* =========================
+   SEÇÃO SOBRE O PROJETO
+========================= */
+
+.about-project-section {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto 72px;
+  padding: 42px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+
+  border: var(--border-soft);
+  border-radius: var(--radius-2xl);
+  background: var(--gradient-card-dark);
+  box-shadow: var(--shadow-card-strong);
+  backdrop-filter: var(--blur-glass);
+}
+
+.about-project-content {
+  width: 100%;
+  max-width: 860px;
+}
+
+.about-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 18px;
+  padding: 10px 18px;
+
+  border: var(--border-glass);
+  border-radius: var(--radius-pill);
+  color: var(--color-text-primary);
+  background: var(--background-glass-light);
+
+  font-weight: 800;
+}
+
+.about-project-content h1 {
+  max-width: 680px;
+  margin: 0 0 24px;
+
+  color: var(--color-text-primary);
+  font-size: clamp(48px, 6vw, 78px);
+  line-height: 0.95;
+  letter-spacing: -2px;
+}
+
+.about-project-content p {
+  max-width: 760px;
+  margin: 0 0 18px;
+
+  color: var(--color-text-muted);
+  font-size: 19px;
+  line-height: 1.7;
+}
+
+/* =========================
+   IMAGEM PRINCIPAL
+   Imagem panorâmica / banner
+========================= */
+
+.about-project-image-card {
+  position: relative;
+  width: 100%;
+  margin: 0;
+
+  border: var(--border-glass);
+  border-radius: 34px;
+  overflow: hidden;
+
+  background: var(--gradient-image-background);
+  box-shadow: var(--shadow-image);
+
+  cursor: pointer;
+  isolation: isolate;
+}
+
+.about-project-image-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+
+  background: radial-gradient(
+    circle at top left,
+    rgba(255, 255, 255, 0.22),
+    transparent 38%
+  );
+
+  pointer-events: none;
+}
+
+.about-project-image-glow {
+  position: absolute;
+  inset: -30%;
+  z-index: 0;
+
+  background:
+    radial-gradient(circle at 18% 20%, rgba(255, 255, 255, 0.28), transparent 28%),
+    radial-gradient(circle at 85% 60%, rgba(155, 99, 246, 0.42), transparent 36%);
+
+  filter: blur(28px);
+  pointer-events: none;
+}
+
+.about-project-image-wrapper {
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+  padding: 14px;
+
+  border-radius: 32px;
+  overflow: hidden;
+}
+
+.about-project-image {
+  width: 100%;
+  height: auto;
+  display: block;
+
+  border-radius: 24px;
+  object-fit: contain;
+}
+
+/* =========================
+   SEÇÃO EQUIPE
+========================= */
+
+.about-team-section {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.about-team-header {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.about-team-header .about-badge {
+  color: var(--color-primary);
+  background: var(--background-badge-soft);
+}
+
+.about-team-header h2 {
+  margin: 0 0 14px;
+
+  color: var(--color-text-dark);
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.15;
+}
+
+.about-team-header p {
+  max-width: 720px;
+  margin: 0 auto;
+
+  color: var(--color-text-dark);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.about-team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 26px;
+}
+
+/* =========================
+   CARD DE PESSOA
+   COMPONENTE CharPeople
+========================= */
+
+.char-people-card {
+  position: relative;
+  width: 100%;
+  min-height: 330px;
+  padding: 18px;
+
+  border: var(--border-soft);
+  border-radius: var(--radius-xl);
+  color: var(--color-text-primary);
+  background: var(--gradient-card-soft);
+  box-shadow: var(--shadow-card);
+  backdrop-filter: var(--blur-glass);
+
+  cursor: pointer;
+  overflow: visible;
+}
+
+.char-people-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  border-radius: var(--radius-xl);
+  background: var(--gradient-card-glow);
+
+  pointer-events: none;
+}
+
+/* 
+  IMPORTANTE:
+  Aqui precisa ser absolute, porque o seu Framer Motion usa:
+  inset, width, height e borderRadius.
+*/
+.char-people-image-wrapper {
+  position: absolute;
+  z-index: 2;
+
+  inset: 18px auto auto 18px;
+  width: calc(100% - 36px);
+  height: auto;
+  aspect-ratio: 1 / 1;
+
+  border: var(--border-card-inner);
+  border-radius: 26px;
+  overflow: hidden;
+
+  background: var(--gradient-avatar-background);
+  box-shadow: var(--shadow-inner);
+}
+
+.char-people-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 
+  Como a imagem agora é absolute,
+  o conteúdo precisa ficar empurrado para baixo manualmente.
+*/
+.char-people-content {
+  position: relative;
+  z-index: 1;
+
+  padding-top: calc(100% + 18px);
+}
+
+.char-people-content h3 {
+  margin: 0 0 6px;
+
+  color: var(--color-text-primary);
+  font-size: 1.15rem;
+  line-height: 1.3;
+}
+
+.char-people-content p {
+  margin: 0;
+
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* =========================
+   POPUPS ESPECIAIS DO CARD
+========================= */
+
+.char-people-popups {
+  position: absolute;
+  top: -42px;
+  left: 50%;
+  z-index: 30;
+
+  width: 250px;
+  height: 112px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+
+  pointer-events: none;
+  transform: translateX(-50%);
+}
+
+.char-people-popup-image {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-background);
+  box-shadow: var(--shadow-popup);
+}
+
+.char-people-popup-image.popup-1,
+.char-people-popup-image.popup-2 {
+  position: static;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 1050px) {
+  .about-page {
+    padding: 24px;
+  }
+
+  .about-project-section {
+    padding: 34px;
+    margin-bottom: 62px;
+  }
+
+  .about-team-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 800px) {
+  .about-page {
+    padding: 24px 16px 48px;
+  }
+
+  .about-project-section {
+    padding: 28px;
+    gap: 28px;
+    margin-bottom: 56px;
+    border-radius: var(--radius-xl);
+  }
+
+  .about-project-content h1 {
+    font-size: 44px;
+    letter-spacing: -1px;
+  }
+
+  .about-project-content p {
+    font-size: 16px;
+  }
+
+  .about-project-image-card {
+    border-radius: 26px;
+  }
+
+  .about-project-image-wrapper {
+    padding: 10px;
+    border-radius: 24px;
+  }
+
+  .about-project-image {
+    border-radius: 18px;
+  }
+
+  .about-team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .char-people-card {
+    min-height: 300px;
+    padding: 14px;
+  }
+
+  .char-people-image-wrapper {
+    inset: 14px auto auto 14px;
+    width: calc(100% - 28px);
+  }
+
+  .char-people-content {
+    padding-top: calc(100% + 14px);
+  }
+}
+
+@media (max-width: 560px) {
+  .about-project-section {
+    padding: 22px;
+    border-radius: var(--radius-lg);
+  }
+
+  .about-project-content h1 {
+    font-size: 38px;
+  }
+
+  .about-project-image-wrapper {
+    padding: 8px;
+  }
+
+  .about-team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .char-people-card {
+    min-height: 330px;
+  }
+
+  .char-people-popups {
+    top: -36px;
+    width: 210px;
+    height: 96px;
+    gap: 12px;
+  }
+
+  .char-people-popup-image {
+    width: 82px;
+    height: 82px;
+    border-radius: 20px;
+  }
+}

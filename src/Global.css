@@ -103,6 +103,9 @@
   --gradient-avatar-background:
     linear-gradient(135deg, rgba(160, 106, 245, 0.85), rgba(155, 99, 246, 0.55));
 
+  --gradient-banner-copy:
+    linear-gradient(180deg, rgba(90, 22, 140, 0.1), rgba(90, 22, 140, 0.9));
+
   /* =========================
      BORDAS
   ========================= */
