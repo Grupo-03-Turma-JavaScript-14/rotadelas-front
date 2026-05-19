@@ -14,10 +14,8 @@
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=fff)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=fff)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=fff)
-![Status](https://img.shields.io/badge/status-em%20desenvolvimento-8A2BE2?style=for-the-badge)
-![License](https://img.shields.io/badge/license-Academic-blue?style=for-the-badge)
+
 
 </p>
 
