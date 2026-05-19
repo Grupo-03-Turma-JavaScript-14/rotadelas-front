@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+import { motion, type Variants } from 'framer-motion'
 
 import '../css/AboutUs.css'
 import CharPeople from '../../components/AboutUs/CharPeople'
@@ -49,7 +49,7 @@ const teamMembers: TeamMember[] = [
   },
 ]
 
-const pageVariants = {
+const pageVariants: Variants = {
   hidden: {
     opacity: 0,
     y: 24,
@@ -65,7 +65,7 @@ const pageVariants = {
   },
 }
 
-const sectionVariants = {
+const sectionVariants: Variants = {
   hidden: {
     opacity: 0,
     y: 34,
@@ -80,7 +80,7 @@ const sectionVariants = {
   },
 }
 
-const textContainerVariants = {
+const textContainerVariants: Variants = {
   hidden: {
     opacity: 0,
   },
@@ -93,7 +93,7 @@ const textContainerVariants = {
   },
 }
 
-const textItemVariants = {
+const textItemVariants: Variants = {
   hidden: {
     opacity: 0,
     y: 18,
@@ -108,7 +108,7 @@ const textItemVariants = {
   },
 }
 
-const teamGridVariants = {
+const teamGridVariants: Variants = {
   hidden: {
     opacity: 0,
   },
@@ -121,7 +121,7 @@ const teamGridVariants = {
   },
 }
 
-const teamCardVariants = {
+const teamCardVariants: Variants = {
   hidden: {
     opacity: 0,
     y: 26,
@@ -253,10 +253,7 @@ function AboutUs() {
           </motion.p>
         </motion.div>
 
-        <motion.div
-          className="about-team-grid"
-          variants={teamGridVariants}
-        >
+        <motion.div className="about-team-grid" variants={teamGridVariants}>
           {teamMembers.map((member) => (
             <motion.div key={member.titulo} variants={teamCardVariants}>
               <CharPeople

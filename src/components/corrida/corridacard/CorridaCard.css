@@ -1,0 +1,161 @@
+.corrida-card {
+  width: 300px;
+  max-width: 500px;
+  background: var(--gradient-card-dark);
+  backdrop-filter: var(--blur-glass);
+  border: var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-shadow: var(--shadow-card);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.corrida-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-card-strong);
+  border-color: var(--color-accent);
+}
+
+.corrida-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.corrida-header h2 {
+  color: var(--color-text-primary);
+
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.corrida-preco {
+  background: var(--color-accent);
+
+  color: white;
+
+  padding: 0.4rem 0.9rem;
+
+  border-radius: 999px;
+
+  font-weight: bold;
+}
+
+.corrida-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.corrida-rota {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: rgba(255,255,255,0.08);
+
+  padding: 1rem;
+
+  border-radius: 16px;
+}
+
+.corrida-rota span {
+  color: var(--color-text-primary);
+
+  font-weight: 600;
+}
+
+.label {
+  color: var(--color-text-muted);
+
+  font-size: 0.85rem;
+
+  margin-bottom: 0.3rem;
+}
+
+.seta {
+  color: var(--color-accent);
+
+  font-size: 1.5rem;
+
+  font-weight: bold;
+}
+
+.corrida-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.corrida-info p {
+  color: var(--color-text-primary);
+
+  font-size: 0.95rem;
+}
+
+.corrida-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.corrida-actions button {
+  flex: 1;
+
+  border: none;
+
+  padding: 0.9rem;
+
+  border-radius: 12px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.btn-editar {
+  background: var(--color-button);
+
+  color: var(--color-button-text);
+}
+
+.btn-editar:hover {
+  background: var(--color-button-hover);
+}
+
+.btn-deletar {
+  background: var(--color-danger);
+
+  color: var(--color-danger-text);
+}
+
+.btn-deletar:hover {
+  background: var(--color-danger-hover);
+}
+
+@media (max-width: 520px) {
+  .corrida-card {
+    width: 100%;
+    padding: 1.25rem;
+  }
+
+  .corrida-rota {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .corrida-actions {
+    flex-direction: column;
+  }
+
+  .corrida-actions button {
+    width: 100%;
+  }
+}
