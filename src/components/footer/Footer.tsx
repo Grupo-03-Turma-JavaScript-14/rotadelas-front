@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="space-y-4">
           <img src="/navbar_footer/logo.png" alt="Logo Rota Delas" className="h-12 w-auto object-contain" />
           <p className="text-sm leading-7 text-white/85 max-w-md">
-            Rota Delas conecta seu caminho com confiança, estilo e comunidades inspiradoras.
+            RotaDelas conecta seu caminho com confiança, estilo e comunidades inspiradoras.
           </p>
         </div>
 
@@ -39,14 +39,14 @@ export default function Footer() {
           <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-white">
             Contato
           </h3>
-          <p className="text-sm text-white/80">contato@rotadelas.com</p>
+          <p className="text-sm text-white/80">contato@RotaDelas.com</p>
           <p className="text-sm text-white/80">+55 11 99999-9999</p>
           <p className="text-sm text-white/80">Av. Exemplo, 123 — São Paulo, SP</p>
         </div>
       </div>
 
       <div className="border-t border-white/15 py-5 text-center text-sm text-white/70">
-        © {new Date().getFullYear()} Rota Delas. Todos os direitos reservados.
+        © {new Date().getFullYear()} RotaDelas. Todos os direitos reservados.
       </div>
     </footer>
   )
