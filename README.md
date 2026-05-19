@@ -2,8 +2,6 @@
 
 # 🚺 Rota Delas - Front-end
 
-<img src="./public/banner.png" alt="Banner Rota Delas" width="100%"/>
-
 Plataforma desenvolvida para promover mais segurança, autonomia e acolhimento para mulheres durante seus trajetos urbanos.
 
 
