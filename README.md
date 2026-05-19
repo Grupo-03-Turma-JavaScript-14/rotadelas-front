@@ -36,26 +36,9 @@ A aplicação apresenta informações sobre o projeto, funcionalidades da plataf
 
 ## 🏠 Home
 
-<p align="center">
-  <img src="./public/home.png" width="100%" alt="Home Rota Delas"/>
-</p>
-
 ---
 
 ## 🚀 Funcionalidades da Plataforma
-
-<p align="center">
-  <img src="./public/produto-1.png" width="49%" alt="Produto Rota Delas"/>
-  <img src="./public/produto-2.png" width="49%" alt="Produto Rota Delas"/>
-</p>
-
----
-
-## 👩‍💻 Sobre Nós
-
-<p align="center">
-  <img src="./public/sobre.png" width="100%" alt="Sobre Nós"/>
-</p>
 
 ---
 
