@@ -24,8 +24,13 @@ A aplicação apresenta informações sobre os planos, fluxo de navegação inst
 # 📸 Prévia da Aplicação
 
 ## 🏠 Home
+
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/SEU-PRINT-AQUI" alt="Preview Home SaveDrive" width="100%"/>
+  <img 
+    src="https://private-user-images.githubusercontent.com/203920656/596252283-65340fa9-8266-4453-a51b-4c3cbe19365c.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzkzODQzMDYsIm5iZiI6MTc3OTM4NDAwNiwicGF0aCI6Ii8yMDM5MjA2NTYvNTk2MjUyMjgzLTY1MzQwZmE5LTgyNjYtNDQ1My1hNTFiLTRjM2NiZTE5MzY1Yy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDUyMVQxNzIwMDZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02Y2JkYjcwNDU1MmY4NDc1N2QyM2VlM2RiNWI0N2YyYmUxMTI5N2IzOTQ0MGUxYzg1M2U2NjZiZGYxZWQ2ODRhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.3XNCXM2R2kSJzCsN2tOIueX3dr1mpOmiyuo1IC72cl0"
+    alt="Preview Home SaveDrive"
+    width="100%"
+  />
 </p>
 ---
 
