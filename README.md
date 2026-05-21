@@ -24,11 +24,9 @@ A aplicação apresenta informações sobre os planos, fluxo de navegação inst
 # 📸 Prévia da Aplicação
 
 ## 🏠 Home
-
 <p align="center">
   <img src="https://github.com/user-attachments/assets/SEU-PRINT-AQUI" alt="Preview Home SaveDrive" width="100%"/>
 </p>
-
 ---
 
 # 🚀 Funcionalidades da Interface
