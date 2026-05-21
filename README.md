@@ -1,22 +1,14 @@
-<div align="center">
+# 🚗 SaveDrive - Front-end
 
-# 🚺 Rota Delas - Front-end
+Plataforma desenvolvida para simular e gerenciar seguros automotivos, oferecendo uma experiência moderna, ágil e focada na proteção do motorista.
 
-Plataforma desenvolvida para promover mais segurança, autonomia e acolhimento para mulheres durante seus trajetos urbanos.
+---
 
+## 💙 Sobre o Projeto
 
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=fff)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=fff)
+O **SaveDrive** é uma aplicação front-end desenvolvida como o **Desafio 2 da Generation Brasil**. O objetivo principal é simular uma plataforma de seguros automotivos conectada diretamente a uma API REST, utilizando a tecnologia como ferramenta para proporcionar autonomia e previsibilidade financeira aos condutores.
 
-</div>
-
-
-# 💜 Sobre o Projeto
-
-O **Rota Delas** é uma plataforma desenvolvida para promover segurança, autonomia e acolhimento para mulheres durante seus trajetos urbanos, utilizando tecnologia como ferramenta de impacto social.
-
-Este repositório contém todo o desenvolvimento do **Front-end** da aplicação, construído com foco em:
+Este repositório contém todo o desenvolvimento do Front-end da aplicação, construído com foco em:
 
 - 🎨 Interface moderna e acessível
 - 📱 Responsividade
@@ -25,73 +17,120 @@ Este repositório contém todo o desenvolvimento do **Front-end** da aplicação
 - 🧠 Navegação intuitiva
 - ✨ Experiência visual elegante
 
-A aplicação apresenta informações sobre o projeto, funcionalidades da plataforma e identidade visual da solução.
+A aplicação apresenta informações sobre os planos, fluxo de navegação institucional e uma regra de negócio especial para cálculo de vantagens.
 
+---
 
 # 📸 Prévia da Aplicação
 
 ## 🏠 Home
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/SEU-PRINT-AQUI" alt="Preview Home SaveDrive" width="100%"/>
+</p>
+
 ---
 
-## 🚀 Funcionalidades da Plataforma
+# 🚀 Funcionalidades da Interface
+
+- ✅ Navegação entre páginas com rotas fluidas e intuitivas
+- ✅ Sistema automatizado de cálculo de desconto
+- ✅ Aplicação de **20% de desconto** para veículos com mais de 10 anos
+- ✅ Layout totalmente responsivo
+- ✅ Componentização reutilizável
+- ✅ Integração completa com API REST
+- ✅ Estrutura escalável e organizada
 
 ---
 
 # 🧠 Tecnologias Utilizadas
 
-- React
-- TypeScript
-- Vite
-- CSS3
-- React Router DOM
-- ESLint
+<div align="center">
+
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+
+</div>
 
 ---
 
 # 📁 Estrutura do Projeto
 
-```bash
+```text
 src
+ ┣ 📂 assets
+ ┃ ┣ 📂 aboutus
+ ┃ ┣ 📜 hero.png
+ ┃ ┣ 📜 react.svg
+ ┃ ┣ 📜 Savedrive-logo.png
+ ┃ ┗ 📜 vite.svg
+ ┃
  ┣ 📂 components
+ ┃ ┣ 📂 cardcategoria
+ ┃ ┃ ┣ 📜 CardCategoria.css
+ ┃ ┃ ┗ 📜 CardCategoria.tsx
+ ┃ ┣ 📂 cardusuario
+ ┃ ┃ ┣ 📜 CardUsuario.css
+ ┃ ┃ ┗ 📜 CardUsuario.tsx
+ ┃ ┣ 📂 categoria
+ ┃ ┃ ┗ 📜 CategoriaModal.tsx
  ┃ ┣ 📂 footer
+ ┃ ┃ ┣ 📜 Footer.css
  ┃ ┃ ┗ 📜 Footer.tsx
+ ┃ ┣ 📂 Loading
+ ┃ ┣ 📂 modalpopup
  ┃ ┗ 📂 navbar
- ┃ ┃ ┗ 📜 Navbar.tsx
+ ┃
  ┣ 📂 pages
  ┃ ┣ 📂 css
+ ┃ ┃ ┣ 📂 Produto
+ ┃ ┃ ┣ 📜 CalculoSeguro.css
+ ┃ ┃ ┗ 📜 Home.css
  ┃ ┗ 📂 tsx
+ ┃ ┃ ┣ 📂 Produto
  ┃ ┃ ┣ 📜 Aboutus.tsx
- ┃ ┃ ┣ 📜 Home.tsx
- ┃ ┃ ┗ 📜 Product.tsx
+ ┃ ┃ ┣ 📜 CalculoSeguro.tsx
+ ┃ ┃ ┗ 📜 Home.tsx
+ ┃
+ ┣ 📂 service
+ ┃ ┣ 📜 Service.ts
+ ┃ ┗ 📜 Types.ts
+ ┃
  ┣ 📜 App.tsx
- ┣ 📜 Global.css
- ┗ 📜 main.tsx
+ ┣ 📜 main.tsx
+ ┗ 📜 styles.css
 ```
 
 ---
 
 # 🎨 Identidade Visual
 
-A interface foi construída utilizando uma identidade visual moderna baseada em:
+A interface do **SaveDrive** foi construída utilizando uma identidade visual baseada em sentimentos de:
 
-- Tons de roxo
-- Branco suave
+- 🛡️ Proteção
+- 🚘 Segurança
+- 💙 Estabilidade
+- 🤝 Credibilidade
+
+### 🐢 Mascote Oficial
+
+A tartaruga foi escolhida como símbolo oficial por representar:
+
+- Resistência
+- Segurança contínua
+- Solidez
+- Proteção no trajeto
+
+### ✨ Estética Geral
+
 - Contrastes acessíveis
-- Elementos minimalistas
-- Cards com sombras suaves
-- Layout limpo e organizado
-
----
-
-# ✨ Funcionalidades da Interface
-
-✅ Navegação entre páginas  
-✅ Layout responsivo  
-✅ Componentização reutilizável  
-✅ Estrutura escalável  
-✅ Interface moderna  
-✅ Separação organizada de páginas e componentes  
+- Interface baseada em cards
+- Sombras suaves
+- Layout moderno e organizado
+- Navegação intuitiva
 
 ---
 
@@ -100,7 +139,7 @@ A interface foi construída utilizando uma identidade visual moderna baseada em:
 ## 📥 Clone o repositório
 
 ```bash
-git clone https://github.com/Grupo-03-Turma-JavaScript-14/rotadelas-front.git
+git clone https://github.com/Grupo-03-Turma-JS-14/front-end-savedrive.git
 ```
 
 ---
@@ -108,7 +147,7 @@ git clone https://github.com/Grupo-03-Turma-JavaScript-14/rotadelas-front.git
 ## 📂 Acesse a pasta do projeto
 
 ```bash
-cd rotadelas-front
+cd front-end-savedrive
 ```
 
 ---
@@ -131,22 +170,11 @@ npm run dev
 
 # 🌐 Integração com o Back-end
 
-O Front-end foi desenvolvido para consumir os serviços da API do projeto **Rota Delas Back-end**.
+O Front-end foi estruturado para realizar requisições HTTP consumindo a API desenvolvida em **NestJS** e **MySQL**, permitindo operações completas de CRUD.
 
-🔗 Repositório do Back-end:
+## 🔗 Repositório do Back-end
 
-https://github.com/Grupo-03-Turma-JavaScript-14/rotadelas
-
----
-
-# 🔮 Futuras Implementações
-
-- 🔐 Autenticação de usuários
-- 📍 Integração com geolocalização
-- 🛡️ Rotas seguras em tempo real
-- 🚨 Botão de emergência
-- 👥 Compartilhamento de trajeto
-- 📲 Integração mobile
+👉 https://github.com/Grupo-03-Turma-JavaScript-14/savedrive
 
 ---
 
@@ -159,56 +187,49 @@ https://github.com/Grupo-03-Turma-JavaScript-14/rotadelas
   <a href="https://github.com/Duartetais">
     <img src="https://github.com/Duartetais.png" width="100px;" alt="Taís Duarte"/><br/>
     <sub><b>Taís Duarte</b></sub>
-  </a><br/>
- 
+  </a>
 </td>
 
 <td align="center">
   <a href="https://github.com/darkblacks">
     <img src="https://github.com/darkblacks.png" width="100px;" alt="darkblacks"/><br/>
     <sub><b>darkblacks</b></sub>
-  </a><br/>
-
+  </a>
 </td>
 
 <td align="center">
   <a href="https://github.com/BiaNascimento">
     <img src="https://github.com/BiaNascimento.png" width="100px;" alt="BiaNascimento"/><br/>
     <sub><b>BiaNascimento</b></sub>
-  </a><br/>
-
+  </a>
 </td>
 
 <td align="center">
   <a href="https://github.com/KefilweLourenco">
     <img src="https://github.com/KefilweLourenco.png" width="100px;" alt="KefilweLourenco"/><br/>
     <sub><b>KefilweLourenco</b></sub>
-  </a><br/>
- 
+  </a>
 </td>
 
 <td align="center">
   <a href="https://github.com/Kauvinzera">
     <img src="https://github.com/Kauvinzera.png" width="100px;" alt="Kauvinzera"/><br/>
     <sub><b>Kauvinzera</b></sub>
-  </a><br/>
-
+  </a>
 </td>
 
 <td align="center">
   <a href="https://github.com/leticiafnss">
     <img src="https://github.com/leticiafnss.png" width="100px;" alt="leticiafnss"/><br/>
     <sub><b>leticiafnss</b></sub>
-  </a><br/>
-
+  </a>
 </td>
 
 <td align="center">
   <a href="https://github.com/JhonatanMiranda221">
     <img src="https://github.com/JhonatanMiranda221.png" width="100px;" alt="JhonatanMiranda221"/><br/>
     <sub><b>JhonatanMiranda221</b></sub>
-  </a><br/>
-
+  </a>
 </td>
 
   </tr>
@@ -216,12 +237,16 @@ https://github.com/Grupo-03-Turma-JavaScript-14/rotadelas
 
 ---
 
-# 📄 Licença
+# 📚 Finalidade
 
-Este projeto foi desenvolvido para fins acadêmicos e educacionais.
+Este projeto foi desenvolvido para fins acadêmicos e educacionais através da formação Full Stack da Generation Brasil.
 
 ---
 
-# 💜 Rota Delas
+<div align="center">
 
-Tecnologia e inovação promovendo mais segurança e autonomia para mulheres.
+## 🚗 SaveDrive
+
+### _Estabilidade, proteção e tecnologia para o seu caminho._
+
+</div>
