@@ -1,23 +1,28 @@
-# 🚗 SaveDrive - Front-end
+# 🚺 Rota Delas - Front-end
 
-Plataforma desenvolvida para simular e gerenciar seguros automotivos, oferecendo uma experiência moderna, ágil e focada na proteção do motorista.
+Plataforma desenvolvida para promover segurança, autonomia e suporte para mulheres em deslocamento, oferecendo uma experiência moderna, acolhedora e intuitiva.
+
+O **Rota Delas** foi criado com foco em acessibilidade, proteção e empoderamento feminino através da tecnologia.
 
 ---
 
-## 💙 Sobre o Projeto
+# 💜 Sobre o Projeto
 
-O **SaveDrive** é uma aplicação front-end desenvolvida como o **Desafio 2 da Generation Brasil**. O objetivo principal é simular uma plataforma de seguros automotivos conectada diretamente a uma API REST, utilizando a tecnologia como ferramenta para proporcionar autonomia e previsibilidade financeira aos condutores.
+O **Rota Delas** é uma aplicação Front-end desenvolvida como parte do desafio da Generation Brasil, com o objetivo de criar uma plataforma voltada à segurança e apoio de mulheres durante seus trajetos urbanos.
+
+A aplicação busca unir tecnologia, acolhimento e praticidade em uma interface moderna e intuitiva.
 
 Este repositório contém todo o desenvolvimento do Front-end da aplicação, construído com foco em:
 
+- 🚺 Segurança feminina
+- 📍 Compartilhamento de localização
+- 🛡️ Rede de apoio
 - 🎨 Interface moderna e acessível
 - 📱 Responsividade
 - ♻️ Componentização reutilizável
 - 🚀 Performance e escalabilidade
 - 🧠 Navegação intuitiva
-- ✨ Experiência visual elegante
-
-A aplicação apresenta informações sobre os planos, fluxo de navegação institucional e uma regra de negócio especial para cálculo de vantagens.
+- ✨ Experiência visual acolhedora
 
 ---
 
@@ -27,22 +32,25 @@ A aplicação apresenta informações sobre os planos, fluxo de navegação inst
 
 <p align="center">
   <img 
-    src="https://private-user-images.githubusercontent.com/203920656/596252283-65340fa9-8266-4453-a51b-4c3cbe19365c.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzkzODQzMDYsIm5iZiI6MTc3OTM4NDAwNiwicGF0aCI6Ii8yMDM5MjA2NTYvNTk2MjUyMjgzLTY1MzQwZmE5LTgyNjYtNDQ1My1hNTFiLTRjM2NiZTE5MzY1Yy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDUyMVQxNzIwMDZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02Y2JkYjcwNDU1MmY4NDc1N2QyM2VlM2RiNWI0N2YyYmUxMTI5N2IzOTQ0MGUxYzg1M2U2NjZiZGYxZWQ2ODRhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.3XNCXM2R2kSJzCsN2tOIueX3dr1mpOmiyuo1IC72cl0"
-    alt="Preview Home SaveDrive"
+    src="https://github.com/user-attachments/assets/e3f509c8-11d2-4688-b996-0849501bf3eb"
+    alt="Preview Home Rota Delas"
     width="100%"
   />
 </p>
+
 ---
 
 # 🚀 Funcionalidades da Interface
 
-- ✅ Navegação entre páginas com rotas fluidas e intuitivas
-- ✅ Sistema automatizado de cálculo de desconto
-- ✅ Aplicação de **20% de desconto** para veículos com mais de 10 anos
-- ✅ Layout totalmente responsivo
+- ✅ Navegação intuitiva entre páginas
+- ✅ Interface moderna e acolhedora
+- ✅ Sistema responsivo
 - ✅ Componentização reutilizável
-- ✅ Integração completa com API REST
-- ✅ Estrutura escalável e organizada
+- ✅ Estrutura organizada e escalável
+- ✅ Integração com API REST
+- ✅ Experiência visual acessível
+- ✅ Fluxos preparados para expansão futura
+- ✅ Estrutura preparada para autenticação
 
 ---
 
@@ -68,7 +76,6 @@ src
  ┃ ┣ 📂 aboutus
  ┃ ┣ 📜 hero.png
  ┃ ┣ 📜 react.svg
- ┃ ┣ 📜 Savedrive-logo.png
  ┃ ┗ 📜 vite.svg
  ┃
  ┣ 📂 components
@@ -90,12 +97,11 @@ src
  ┣ 📂 pages
  ┃ ┣ 📂 css
  ┃ ┃ ┣ 📂 Produto
- ┃ ┃ ┣ 📜 CalculoSeguro.css
- ┃ ┃ ┗ 📜 Home.css
+ ┃ ┃ ┣ 📜 Home.css
+ ┃ ┃ ┗ 📜 Aboutus.css
  ┃ ┗ 📂 tsx
  ┃ ┃ ┣ 📂 Produto
  ┃ ┃ ┣ 📜 Aboutus.tsx
- ┃ ┃ ┣ 📜 CalculoSeguro.tsx
  ┃ ┃ ┗ 📜 Home.tsx
  ┃
  ┣ 📂 service
@@ -111,29 +117,23 @@ src
 
 # 🎨 Identidade Visual
 
-A interface do **SaveDrive** foi construída utilizando uma identidade visual baseada em sentimentos de:
+A identidade visual do **Rota Delas** foi construída baseada em sentimentos de:
 
-- 🛡️ Proteção
-- 🚘 Segurança
-- 💙 Estabilidade
-- 🤝 Credibilidade
-
-### 🐢 Mascote Oficial
-
-A tartaruga foi escolhida como símbolo oficial por representar:
-
-- Resistência
-- Segurança contínua
-- Solidez
-- Proteção no trajeto
+- 💜 Acolhimento
+- 🛡️ Segurança
+- 🚺 Empoderamento feminino
+- 🤝 Rede de apoio
+- ✨ Confiança
 
 ### ✨ Estética Geral
 
+- Interface moderna
 - Contrastes acessíveis
-- Interface baseada em cards
-- Sombras suaves
-- Layout moderno e organizado
+- Layout acolhedor
 - Navegação intuitiva
+- Componentes reutilizáveis
+- Design responsivo
+- Organização visual limpa
 
 ---
 
@@ -142,7 +142,7 @@ A tartaruga foi escolhida como símbolo oficial por representar:
 ## 📥 Clone o repositório
 
 ```bash
-git clone https://github.com/Grupo-03-Turma-JS-14/front-end-savedrive.git
+git clone https://github.com/Grupo-03-Turma-JavaScript-14/rotadelas-front.git
 ```
 
 ---
@@ -150,7 +150,7 @@ git clone https://github.com/Grupo-03-Turma-JS-14/front-end-savedrive.git
 ## 📂 Acesse a pasta do projeto
 
 ```bash
-cd front-end-savedrive
+cd rotadelas-front
 ```
 
 ---
@@ -173,11 +173,9 @@ npm run dev
 
 # 🌐 Integração com o Back-end
 
-O Front-end foi estruturado para realizar requisições HTTP consumindo a API desenvolvida em **NestJS** e **MySQL**, permitindo operações completas de CRUD.
+O Front-end foi estruturado para consumir uma API REST responsável pelo gerenciamento de usuários, funcionalidades da plataforma e integração dos recursos da aplicação.
 
-## 🔗 Repositório do Back-end
-
-👉 https://github.com/Grupo-03-Turma-JavaScript-14/savedrive
+A arquitetura foi planejada para permitir operações completas de CRUD de forma organizada e escalável.
 
 ---
 
@@ -248,8 +246,8 @@ Este projeto foi desenvolvido para fins acadêmicos e educacionais através da f
 
 <div align="center">
 
-## 🚗 SaveDrive
+# 🚺 Rota Delas
 
-### _Estabilidade, proteção e tecnologia para o seu caminho._
+### _Tecnologia, acolhimento e segurança para cada trajeto._
 
 </div>
