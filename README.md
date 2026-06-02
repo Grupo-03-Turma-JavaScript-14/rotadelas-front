@@ -30,13 +30,8 @@ Este repositório contém todo o desenvolvimento do Front-end da aplicação, co
 
 ## 🏠 Home
 
-<p align="center">
-  <img 
-    src="https://github.com/user-attachments/assets/e3f509c8-11d2-4688-b996-0849501bf3eb"
-    alt="Preview Home Rota Delas"
-    width="100%"
-  />
-</p>
+<img width="1918" height="1037" alt="image" src="https://github.com/user-attachments/assets/1b9f5f40-790d-42d3-bf8a-8d23e37f11a3" />
+
 
 ---
 
